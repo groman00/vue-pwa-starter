@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueMaterial from 'vue-material';
 import 'vue-material/dist/vue-material.css';
+import router from './routers/app';
 
 Vue.use(VueMaterial)
 // Vue.use(VueMaterial.MdCore) //Required to boot vue material
@@ -15,7 +16,7 @@ if('serviceWorker' in navigator) {
 }
 
 new Vue({
-    // router,
+    router,
     // store
     methods: {
         toggleLeftSidenav() {

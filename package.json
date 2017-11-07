@@ -4,9 +4,14 @@
   "main": "index.js",
   "author": "groman00",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/groman00/vue-pwa-starter"
+  },
   "scripts": {
     "dev": "NODE_ENV=development webpack --progress --hide-modules --config=./build/webpack.dev.conf",
-    "dev-server": "NODE_ENV=development webpack-dev-server --config=./build/webpack.dev.conf",
+    "watch": "NODE_ENV=development webpack --progress --watch --hide-modules --config=./build/webpack.dev.conf",
+    "hot": "NODE_ENV=development webpack-dev-server --config=./build/webpack.dev.conf",
     "prod": "NODE_ENV=production webpack --config=./build/webpack.prod.conf",
     "simple-server": "cd ./dist && python -m SimpleHTTPServer 8080"
   },
@@ -22,7 +27,9 @@
     "css-loader": "^0.28.7",
     "style-loader": "^0.19.0",
     "sw-precache-webpack-plugin": "^0.11.4",
+    "sw-toolbox": "^3.6.0",
     "vue-loader": "^13.4.0",
+    "vue-template-compiler": "^2.5.3",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.4",
     "webpack-merge": "^4.1.1"
