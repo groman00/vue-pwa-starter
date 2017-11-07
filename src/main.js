@@ -8,6 +8,12 @@ Vue.use(VueMaterial)
 // Vue.use(VueMaterial.MdBottomBar)
 // Vue.use(VueMaterial.MdIcon)
 
+
+// Register service worker
+if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js');
+}
+
 new Vue({
     // router,
     // store
