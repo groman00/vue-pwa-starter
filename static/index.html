@@ -10,8 +10,8 @@
         <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
         <!-- <link rel="stylesheet" href="/dist/css/style.css"> -->
     </head>
-    <body>
-        <div id="app">
+    <body class="md-layout">
+        <md-layout id="app" md-column>
             <md-toolbar>
                 <md-button class="md-icon-button" @click="toggleLeftSidenav">
                     <md-icon>menu</md-icon>
@@ -38,7 +38,7 @@
                 </md-list>
             </md-sidenav>
             <router-view></router-view>
-        </div>
+        </md-layout>
         <script src="js/bundle.js"></script>
     </body>
 </html>
